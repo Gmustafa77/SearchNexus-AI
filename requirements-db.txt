@@ -1,0 +1,5 @@
+# Optional: durable, multi-instance conversation memory (set SESSION_DB_URL).
+-r requirements.txt
+google-adk[db]>=2.13,<3
+aiosqlite>=0.20      # sqlite+aiosqlite:///./sessions.db   (single instance / development)
+asyncpg>=0.29        # postgresql+asyncpg://user:pw@host/db (production)

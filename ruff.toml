@@ -1,0 +1,7 @@
+line-length = 140
+target-version = "py312"
+[lint]
+select = ["E", "F", "W", "I", "B", "UP", "ASYNC", "S"]
+ignore = ["S101", "E702", "E701"]   # asserts in tests; compact one-liners are an existing style here
+[lint.per-file-ignores]
+"tests/*" = ["S", "B011", "E501", "B017"]

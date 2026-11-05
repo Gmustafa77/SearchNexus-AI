@@ -1,0 +1,9 @@
+# Runtime dependencies only (the Docker image installs just this file).
+google-adk>=2.13,<3
+google-genai>=2.34,<3
+fastapi>=0.115
+uvicorn[standard]>=0.30
+pydantic>=2.9
+pydantic-settings>=2.5
+tenacity>=9.0
+prometheus-client>=0.20
